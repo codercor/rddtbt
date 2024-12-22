@@ -77,29 +77,6 @@ module.exports = {
         term("\rCountdown: 00:00:00\n");
         term.green("Time's up!\n");
         // term.showCursor(); // İmleci tekrar göster
-    },
-    checkFileExists: (filePath) => {
-        return fs.existsSync(filePath);
-    },
-    readJsonFile:
-        (filePath) => {
-            try {
-                const data = fs.readFileSync(filePath);
-                return JSON.parse(data);
-            } catch (error) {
-                term.red("An error occurred while reading the JSON file\n");
-                return null;
-            }
-        },
-    writeJsonFile:
-        (filePath, data) => {
-            try {
-                fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-                term.green(`JSON file written successfully: ${filePath}\n`);
-            } catch (error) {
-                term.red("An error occurred while writing the JSON file\n");
-                throw error;
-            }
-        },
+    }
 }
 ;

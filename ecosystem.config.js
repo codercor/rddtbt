@@ -1,14 +1,9 @@
 module.exports = {
     apps: [
         {
-            name: 'tweet-process',
+            name: 'profile-process',
             script: 'src/index.js',
-            args: '--tweet',
+            args: '--profile',
         },
-        {
-            name: 'reply-process',
-            script: 'src/index.js',
-            args: '--reply',
-        }
     ]
 };

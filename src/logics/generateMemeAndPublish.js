@@ -4,7 +4,7 @@ const {createMeme} = require("../imgflip");
 const path = require("path");
 const {downloadMeme} = require("../helpers");
 const puppeteer = require("puppeteer");
-const {tryAuthenticateWithCookieReddit, publishWithImageOnReddit} = require("../twitter");
+const {tryAuthenticateWithCookieReddit, publishWithImageOnReddit} = require("../reddit");
 const {addWatermark} = require("../watermark");
 
 /**
